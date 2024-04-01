@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Pay Calculator</title>
+</head>
+<body>
+    <button>Calculate Pay Data</button>
+    <script>
+        var calcPay = document.querySelector("button")
+        calcPay.addEventListener("click", dataPrompt)
+
+        function dataPrompt(){
+        var hourlyPay = prompt("Enter hourly pay here:")
+        var hoursWorked = prompt("Enter hours worked:")
+
+        var total = Number(hoursWorked) * 2
+
+        var gross = Number(hourlyPay) * Number(total)
+
+        var taxRate = 0.2
+
+        var uncleSam = Number(gross) * Number(taxRate)
+
+        var net = Number(gross) - Number(uncleSam)
+
+        alert(`Gross Pay: $ ${gross.toFixed(2)}
+        Uncle Sam's Share: $ ${uncleSam.toFixed(2)}
+        Net Pay: $ ${net.toFixed(2)}`)
+
+        console.log(`Gross Pay: $ ${gross.toFixed(2)}`)
+        console.log(`Uncle Sam's Share: $ ${uncleSam.toFixed(2)}`)
+        console.log(`Net Pay: $ ${net.toFixed(2)}`)
+
+        }
+
+    </script>
+
+</body>
+</html>

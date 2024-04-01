@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <title>HTML JS Lab on CSS and Positioning</title>
+        <style>
+            h1{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #container{
+                background-color: purple;
+                border: 1px solid red;
+                width: 1000px;
+                height: 700px;
+                padding: 10px;
+                margin:auto
+            }
+            #Header{
+                background-color: antiquewhite;
+                border: 1px solid green;
+                text-align: center;
+                height: 40px;
+                line-height: 40px;
+            }
+            #Nav{
+                width: 998px;
+                border: 1px solid blue;
+                height: 50px;
+                background-color: red;
+            }
+            #Left{
+                float: left;
+                width: 500px;
+                background-color: yellow;
+                height: 450px;
+                /*This is a comment in CSS*/
+            }
+            #Right{
+                float: left;
+                width: 500px;
+                background-color: lightgreen;
+                height: 450px;
+                /*This is a comment in CSS*/
+            }
+            #Footer{
+                clear: both;
+                width: 1000px;
+                height: 100px;
+                background-color: orange;
+                text-align: center;
+                line-height: 100px;
+            }
+
+            body{
+                background-color: cadetblue;
+                background-image: url('images/seamless-1315318_640.jpg');
+
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <div id="container">
+            <h1 id="Header">Welcome to lab on Positioning</h1>
+            <div id="Nav"></div>
+            <div id="Left"></div>
+            <div id="Right"></div>
+            <div id="Footer"><p>&copy; &reg; &cent; This is the footer</p></div>
+        </div>
+    </body>
+</html>
