@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+div{
+    color:darkgreen;
+    font-family: "Quicksand", sans-serif;
+}
+
+#bob{
+    color:blueviolet;
+}
+
+.orange{
+    color:darkturquoise;
+}
+
+.orange b{
+    color: dodgerblue;
+}
+
+div.orange b{
+    color: chartreuse;
+}
+
+input[type="text"]
+{
+    background-color: coral;
+}
+
+a{
+     /* color: burlywood; !!!ctrl+slash will comment out!!!*/
+}
+
+a:link, a:visited{
+    background-color: brown;
+    transition: all 1s;
+}
+
+a:hover, a:active{
+    background-color: blue;
+    transition: all 1s;
+}
+
+#bob::after{
+    content: "My name is Bob" /*adds text to the page, not html {before, after} */
+}
