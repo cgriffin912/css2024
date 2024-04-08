@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>BOM and DOM Lab</title>
+    </head>
+    <body>
+        <h1>BOM and DOM Lab | Week 9</h1>
+
+        <!-- <div id="output"></div>
+
+        <script>
+            var div = document.querySelector(`#output`);
+            var header = document.querySelector('h1');
+            var p = document.createElement(`p`);
+            p.setAttribute(`id`, `some-id`);
+
+            var text = document.createTextNode(`This is text inside of the p tag`);
+
+            p.appendChild(text);
+            div.appendChild(p);
+            header.addEventListener('click', function(e){
+                div.removeChild(p);
+            });
+        </script> -->
+
+        <p class="names">Jay</p>
+        <h2 class="names">Katie</h2>
+        <div class="names">Marty</div>
+
+        <script>
+            var names = document.querySelectorAll(`.names`)
+            console.log(names)
+
+            for (let i = 0; i < names.length; i++) {
+                names[i].style.color = `red`
+                //makes all of the elements with a .names class turn red.
+            }
+        </script>
+    </body>
+</html>
