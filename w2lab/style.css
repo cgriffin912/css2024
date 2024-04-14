@@ -1,0 +1,106 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Syncopate:wght@400;700&display=swap" rel="stylesheet');
+
+body {
+    background-color: white;
+}
+h1 {
+    text-align: center;
+    font-family: "Syncopate", sans-serif;
+    color: orange;
+    font-weight: 700;
+    font-size: 75px;
+    font-style: normal;
+    border-bottom: #81864A;
+  }
+
+h2 {
+    text-align: left;
+    font-family: "Syncopate", sans-serif;
+    color: orange;
+    font-weight: 500;
+    font-size: 40px;
+    font-style: normal;
+    border-top: #81864A;
+    /*background-color: #81864aa0;*/
+  }
+
+
+.nav{
+    text-align: center;
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-size: 25px;
+    font-style: normal;
+    color: orange;
+}
+
+img{float: left; padding: 0 20px 20px 0;}
+  
+.boutme {
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #81864A;
+    /*background-color: #a4a4a2;*/
+  }
+
+#education {
+    font-family: "Marcellus", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #81864A;
+    font-size: 25px;
+    background-image: url("images/bmad.jpg");
+    height: 1000px; 
+    text-shadow: 1px 1px orange;
+
+}
+
+#Hobbies {
+    font-family: "Marcellus", serif;
+    font-weight: 500;
+    font-size: 25px;
+    font-style: normal;
+    color: #81864A;
+    border-bottom: #81864A;
+}
+
+#Footer {
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #81864A;
+    border-bottom: #81864A;
+    border-top: #81864A;
+}
+
+/*section{
+    background-color: #a4a4a2;
+    font-family: #81864A, "Marcellus", sans-serif;
+    
+}
+OLIVE: 81864A*/
+
+a:link, a:visited{
+    display: inline-block;
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-size: 25px;
+    font-style: normal;
+    color: #d4dd78;
+    transition: all 1s;
+    padding-left:50px;
+}
+
+a:hover, a:active{
+    display: inline-block;
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-size: 25px;
+    font-style: normal;
+    color: orange;
+    transition: all 1s;
+    padding-left:50px;
+}
