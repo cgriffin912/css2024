@@ -1,0 +1,39 @@
+@charset "UTF-8";
+.nav{
+    display:none;
+}
+.body{
+    /* body */
+    position: absolute;
+    width: 1886px;
+    height: 748px;
+    left: 17px;
+    right: 17px;
+    top: 210px;
+    bottom: 122px;
+    visibility: hidden;
+    background: rgb(239, 239, 239);
+}
+
+h1{
+    background: rgb(22, 64, 44);
+    /* header */
+    position: absolute;
+    width: 1886px;
+    height: 152px;
+    left: 17px;
+    right: 17px;
+    top: 32px;
+    bottom: 896px;
+}
+
+#bio{
+    /* bio box */
+    position:relative
+    width: 1850px;
+    height: 72px;
+    left: 34px;
+    right: 36px;
+    top: 290px;
+    bottom: 718px;
+}

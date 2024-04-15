@@ -5,6 +5,9 @@
 body {
     background-color: white;
 }
+.hide{
+    display: none;
+}
 h1 {
     text-align: center;
     font-family: "Syncopate", sans-serif;
