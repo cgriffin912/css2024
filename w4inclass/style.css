@@ -17,7 +17,7 @@ main{
     background-color: yellow;
     padding: 20px;
     height: 50%;
-    flex-direction: row ;
+    flex-direction: row;
     /*COLUMNS WILL AUTO ADJUST BUT WILL LOOK DEFAULT^^*/
     justify-content: space-between;
     /*flex-wrap: wrap; nowrap is the default*/

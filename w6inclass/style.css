@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+html{
+    height:100%;
+}
+
+body{
+    height:100%;
+    margin: 0%;
+}
+
+main{
+    height: 100%; /*anything nested inside will take up a percentageg of this 100% and so on*/
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 23px;
+    background-color: #505050;
+}
+
+section{
+    background-color: lime;
+    height: 100%;
+    display: flex;
+}
+aside{
+    background-color: #505050;
+    width: 45px;
+}
+.tray{
+    width:144px;
+    min-width:144px; /*"min width" makes the tray stay the same size*/
+    background-color: #7b7575;
+    transition:all 1s;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+div.tray div{
+    min-width: 144px; /*"min width" makes the tray stay the same size*/
+    box-sizing: border-box;
+    border: 5px solid cyan;
+}
+
+.hide{
+    width: 0;
+    min-width: 0; /*sets width of whatever has this to 0 .......... thiss is a class bc ".hide"*/
+    
+    /*IDS ARE MORE IMPORATNT THAN CLASSES..!!*/
+
+    /*IDs are with # classes are with .   */
+    transition:all 1s;
+}
+
+#program{
+    background-color: #060606;
+    width: 100%; /*makes the box take up 100% of the available space -- if not, there would be a giant box of lime green to the right*/
+    display: flex;
+    flex-direction: column;
+
+}
+
+nav{
+    height: 34px;
+    display: flex;
+}
+
+button{
+    width: 173px;
+    background-color: #161616;
+    border-radius: 0;
+    border: 0 solid #161616;
+    margin-right: 2px;
+
+}
+
+button:last-child{
+    margin: 0;
+}
+
+#breadcrumbs{
+    height: 23px;
+    background-color: #161616;
+
+}
+
+textarea{
+    box-sizing: border-box; /*fixes box to size wout scroll bar*/
+    width:100%;
+    height:100%;
+    background-color: #060606;
+    border: 0 solid #060606; /*gets rid of the white border*/
+    resize: none;
+    color: #ffffff;
+    outline: none;
+    overflow-y: auto;
+
+}
+
+footer{
+    height: 16px;
+    background-color: #0254A0;
+}
+
+/*if you use divs going to have extra margins*/
+
+

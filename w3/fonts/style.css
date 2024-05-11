@@ -29,7 +29,7 @@ h1{
 
 #bio{
     /* bio box */
-    position:relative
+    position:relative;
     width: 1850px;
     height: 72px;
     left: 34px;

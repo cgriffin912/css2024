@@ -1,0 +1,244 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com');
+@import url('https://fonts.gstatic.com" crossorigin');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&family=Teko:wght@300..700&display=swap" rel="stylesheet"');
+
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: auto;
+    width: 1820px;
+    height: 1080px;
+    background-color: rgb(40, 40, 40);
+}
+
+header{
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    background-color: rgb(7, 7, 7);
+}
+#ccl{
+    /*grid-area: ccl;*/
+    width: 478px;
+    height: 50px;
+    left: 30px;
+    right: 1312px;
+    top: 35px;
+    bottom: 15px;
+
+    color: rgb(187, 9, 8);
+    font-family: Teko;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 69px;
+    letter-spacing: 0%;
+    text-align: left;
+    position: absolute;
+}
+#group1{
+    /*grid-area: group1;*/
+    position: absolute;
+    width: 214px;
+    height: 69px;
+    left: 1565px;
+    right: 41px;
+    top: 16px;
+    bottom: 15px;  
+}
+
+main{
+    background-color: rgb(40, 40, 40);
+    height: auto;
+}
+
+.grid{
+    display: grid;
+    grid-row: (3);
+    grid-column: (3);
+    grid-template-columns: 700px 700px 360px;
+    grid-column-gap: 10px;
+    padding: 10px;
+    background-color: rgb(40, 40, 40);
+    align-items: flex-start;
+}
+
+.banner{
+    background-image: url(images/banner.png);
+    width: 1440px;
+    height: 388px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0%;
+}
+
+.leftModule{
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    margin:10px;
+    border-top: 5px solid rgb(187, 9, 8);
+    height: 0.01px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 481px;
+    background-color: rgb(57, 57, 57);
+    justify-content: space-evenly;
+}
+
+.poster{
+    order: 1;
+    width: 310px;
+}
+
+.leftModRight{
+    order: 2;
+    display: grid;
+    grid: 'anniv anniv''adTxt adTxt''adTxt adTxt''amazon amazon''amazon amazon';
+    /*flex-direction: row;
+    flex-wrap: wrap;*/
+    width: auto;
+    padding: 10px;
+    /*align-items: flex-start;*/
+}
+
+.anniv{
+    grid-area: anniv;
+    color: rgb(255, 29, 41);
+    font-family: Rock Salt;
+    font-size: 30px;
+    max-height: 72px;
+    /*width: 353px;*/
+}
+.adTxt{
+    border-top: 4px solid rgb(187, 9, 8);
+    /*order:2;
+    display: flex;
+    flex-wrap: wrap;*/
+    grid-area: adTxt;
+    font-family: Poppins;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    width: 349px;
+    text-align: left;
+}
+.amazon{
+    grid-area: amazon;
+    display: flex;
+    flex-direction: row;
+    min-height: 158px;
+    padding: auto;
+
+}
+.bluRay{ 
+    grid-area: bluRay;
+    max-height:148px;
+    flex-wrap: wrap;
+}
+
+.purchase{
+    grid-area: purchase;
+    font-family: Poppins;
+    margin-left: 10px;
+    font-size: 18px;
+    color: rgb(34, 193, 203);
+}
+
+.price{
+    grid-area: price;
+    font-family: Teko;
+    font-size: 72px;
+    font-weight: 400;
+    margin-left: 10px;
+    text-align: center;
+    color:rgb(255, 255, 255);
+}
+
+.rightModule{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    margin:10px;
+    border-top: 5px solid rgb(187, 9, 8);
+    height: 0.01px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 481px;
+    background-color: rgb(57, 57, 57);
+}
+.pennant{
+    order: 1;
+    width: 641px;
+
+}
+.text{
+    order: 1;
+    width: 676px;
+    color: rgb(255, 255, 255);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.farRightModule{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    min-height: 918px;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: rgb(57, 57, 57);
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+.sign{
+    /* sign */
+    order: 1;
+    width: 325px;
+}
+.history{
+    order: 2;
+    /* right module text */
+    width: 275px;
+    font-family: Roboto;
+    flex-wrap: wrap;
+    font-size: 18px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+span{
+    color: rgb(187, 9, 8);
+    font-weight: bold;
+}
+.underwater{
+    order: 3;
+    /* underwater */
+    width: 325px;
+    margin-top: 30px;
+}
+
+footer{
+    height: 17px;
+    background-color: rgb(7, 7, 7);
+    font-family: Teko;
+    font-size: 12px;
+    padding: 20px;
+    color: rgb(188, 188, 188);
+    text-align:left;
+}
