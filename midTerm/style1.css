@@ -57,9 +57,10 @@ header{
 .banner{
     display: flex;
     flex: none;
-    width: 1400px;
-    margin-top: -30px;
-    margin-right: 20px;
+    width: 1420px;
+    margin-top: -70px;
+    margin-left: -20px;
+    margin-right: 10px;
 }
 
 .leftModule{
