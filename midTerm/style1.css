@@ -13,69 +13,53 @@ body{
     height: 1080px;
     background-color: rgb(40, 40, 40);
 }
-
+main{
+    background-color: rgb(40, 40, 40);
+    display: grid;
+}
 header{
+    z-index: 2;
     display: flex;
     height: 100px;
+    max-width: 1800px;
     justify-content: space-between;
     background-color: rgb(7, 7, 7);
+    flex-wrap: wrap;
+    position: static;
 }
 #ccl{
-    /*grid-area: ccl;*/
     width: 478px;
-    height: 50px;
     left: 30px;
-    right: 1312px;
     top: 35px;
-    bottom: 15px;
 
     color: rgb(187, 9, 8);
     font-family: Teko;
     font-size: 48px;
-    font-weight: 400;
-    line-height: 69px;
-    letter-spacing: 0%;
     text-align: left;
     position: absolute;
 }
 #group1{
-    /*grid-area: group1;*/
     position: absolute;
     width: 214px;
-    height: 69px;
     left: 1565px;
-    right: 41px;
-    top: 16px;
-    bottom: 15px;  
-}
-
-main{
-    background-color: rgb(40, 40, 40);
-    height: auto;
+    top: 16px; 
 }
 
 .grid{
+    z-index: 1;
     display: grid;
-    grid-row: (3);
-    grid-column: (3);
-    grid-template-columns: 700px 700px 360px;
+    grid-template-columns: 700px 700px 380px;
     grid-column-gap: 10px;
-    padding: 10px;
     background-color: rgb(40, 40, 40);
     align-items: flex-start;
 }
 
 .banner{
-    background-image: url(images/banner.png);
-    width: 1440px;
-    height: 388px;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 1;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0%;
+    display: flex;
+    flex: none;
+    width: 1400px;
+    margin-top: -30px;
+    margin-right: 20px;
 }
 
 .leftModule{
@@ -135,8 +119,6 @@ main{
     display: flex;
     flex-direction: row;
     min-height: 158px;
-    padding: auto;
-
 }
 .bluRay{ 
     grid-area: bluRay;
@@ -147,8 +129,10 @@ main{
 .purchase{
     grid-area: purchase;
     font-family: Poppins;
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-top: -10px;
     font-size: 18px;
+    text-decoration: underline;
     color: rgb(34, 193, 203);
 }
 
@@ -156,13 +140,13 @@ main{
     grid-area: price;
     font-family: Teko;
     font-size: 72px;
-    font-weight: 400;
-    margin-left: 10px;
-    text-align: center;
+    margin-left: -1px;
+    text-decoration: underline;
     color:rgb(255, 255, 255);
 }
 
 .rightModule{
+    grid-area: 4;
     grid-column-start: 2;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -189,21 +173,23 @@ main{
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
-    letter-spacing: 0%;
     text-align: left;
 }
 
 .farRightModule{
+    grid-area: 2;
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 3;
     grid-column-end: 3;
     min-height: 918px;
-    border: 1px solid black;
     padding: 20px;
+    border: 1px solid black;
     background-color: rgb(57, 57, 57);
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
+    position: static;
 }
 
 
@@ -220,6 +206,7 @@ main{
     flex-wrap: wrap;
     font-size: 18px;
     text-align: left;
+    padding: 20px;
     color: rgb(255, 255, 255);
 }
 span{
