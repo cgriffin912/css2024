@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wk9working</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header></header>
+        <nav>
+            <a href="#"><i class="fa-solid fa-inbox"></i></a>
+            <i class="fa-brands fa-windows"></i>
+            <div id="trash"><i class="fa-solid fa-trash-can"></i></div>
+        </nav>
+        <aside>
+            <div id="files">
+                This is text
+            </div>
+        </aside>
+        <textarea></textarea>
+    </main>
+    <!--<script src="script.js"></script>--> 
+    <script>
+
+        var a = document.querySelector(`a`);
+        var aside = document.querySelector(`aside`);
+
+        a.addEventListener(`click` , e =>{ /*making button clickable.... arrow function [=>], passing in variable 'e' as a parameter in the function & because going to have more than one line, using curly braces.. if just 1 line, no curly braces needed, just type right after the =>*/
+            e.preventDefault(); /*preventing default behavior - dont want it sening us anywhere*/
+            aside.classList.toggle(`close`); /*if close is on it, it takes it off... if close is not there, puts back on.... can use toggle instead of adding the classList, bc it is only 1 class.*/
+            
+        }); 
+
+
+
+    </script>
+    <script src="https://kit.fontawesome.com/c8e69344c0.js" crossorigin="anonymous"></script>
+
+   
+</body>
+</html>

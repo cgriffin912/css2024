@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    background-color: #82734f;
+
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    height: 100%;
+    background-color: #82734f;
+    display: flex;
+    flex-direction: column;
+}
+
+.cred{
+    color: #010101;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+nav{
+    text-align: center;
+    color: #5a3b11;
+}
+.nombre{
+    color: #fafafa;
+    font-size: 96px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.biopic{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 839px;
+}
+.hi{
+    color: #010101;
+    font-size: 64px;
+    padding-left: 46px;
+    font-style: italic;
+}
+.boutme{
+    color: #fafafa;
+    font-size: 32px;
+    width: 839px;
+    padding-left: 46px;
+}
+.selfie{
+    float: right;
+    width: 484px;
+}
+.mtpto{
+    display: flex;
+    flex-direction: row;
+}
+.hoppa{
+    padding: 46px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 374px;
+    height: 583px;
+}
+.hopperdesc{
+    display: flex;
+    flex-direction: column;
+    width: 484px;
+    height: 209px;
+}
+.fp{
+    color: #010101;
+    font-size: 64px;
+    font-style: italic;
+    padding-top: 35px;
+}
+.hopbio{
+    color: #fafafa;
+    font-size: 32px;
+    float: right;
+}
+
+.repos{
+    display: flex;
+    flex-direction: row;
+    float: left;
+}
+
+.txtrepo{
+    color: #010101;
+    font-size: 64px;
+    font-style: italic;
+    padding-top: 35px;
+    float: left;
+}
+
+.replink{
+    color: #fafafa;
+    font-size: 32px;
+
+}

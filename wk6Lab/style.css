@@ -28,6 +28,7 @@ section{
 aside{
     background-color:#505050;
     width:45px;
+    align-items: center;
 }
 
 .tray{
