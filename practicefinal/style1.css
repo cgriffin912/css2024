@@ -1,0 +1,228 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com');
+@import url('https://fonts.gstatic.com" crossorigin');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&family=Teko:wght@300..700&display=swap" rel="stylesheet"');
+
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    margin: auto;
+    background-color: #82734f;
+
+}
+main{
+    background-color: #82734f;
+    display: grid;
+}
+header{
+    z-index: 2;
+    text-align: center;
+    justify-content: center;
+    background-color: #82734f;
+}
+.nombre{
+    color: #fafafa;
+    font-size: 96px;
+    font-style: italic;
+    text-align: center;
+}
+
+.cred{
+    font-size: 40px;
+    color: #010101;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    text-align: center;
+    color: #5a3b11;
+}
+
+.grid{
+    z-index: 1;
+    display: grid;
+    grid-column-gap: 10px;
+    background-color: #82734f;
+    align-items: flex-start;
+}
+
+.leftModule{
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin:10px;
+    border-top: 5px solid #5a3b11;
+    height: 0.01px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 481px;
+    background-color: #82734f
+    justify-content: space-evenly;
+}
+.biopic{
+    width: 840px;
+}
+
+.hi{
+    color: #010101;
+    font-size: 64px;
+    padding-left: 46px;
+    font-style: italic;
+    width: 840px;
+}
+
+.boutme{
+    color: #fafafa;
+    font-size: 32px;
+    width: 840px;
+    padding-left: 46px;
+}
+
+.poster{
+    order: 1;
+    width: 310px;
+    padding-left: 10px;
+}
+.hopperdesc{
+    order: 2;
+    display: grid;
+    grid: 'fp' 'hopbio'
+    /*flex-direction: row;
+    flex-wrap: wrap;*/
+    width: 484px;
+    padding: 10px;
+    /*align-items: flex-start;*/
+}
+.hopperdesc{
+    display: flex;
+    flex-direction: row;
+    width: 484px;
+    height: 209px;
+}
+.fp{
+    color: #010101;
+    font-size: 64px;
+    font-style: italic;
+    padding-top: 35px;
+}
+.hopbio{
+    color: #fafafa;
+    font-size: 32px;
+    float: right;
+}
+
+.anniv{
+    grid-area: anniv;
+    color: rgb(255, 29, 41);
+    font-family: Rock Salt;
+    font-size: 30px;
+    max-height: 72px;
+    /*width: 353px;*/
+}
+.adTxt{
+    border-top: 4px solid rgb(187, 9, 8);
+    /*order:2;
+    display: flex;
+    flex-wrap: wrap;*/
+    grid-area: adTxt;
+    font-family: Poppins;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    width: 349px;
+    text-align: left;
+}
+.amazon{
+    grid-area: amazon;
+    display: flex;
+    flex-direction: row;
+    min-height: 158px;
+}
+.bluRay{ 
+    grid-area: bluRay;
+    max-height:148px;
+    flex-wrap: wrap;
+}
+
+.purchase{
+    grid-area: purchase;
+    font-family: Poppins;
+    margin-left: 20px;
+    margin-top: -10px;
+    font-size: 18px;
+    text-decoration: underline;
+    color: rgb(34, 193, 203);
+}
+
+.price{
+    grid-area: price;
+    font-family: Teko;
+    font-size: 72px;
+    margin-left: -1px;
+    text-decoration: underline;
+    color:rgb(255, 255, 255);
+}
+
+.selfie{
+    display: flex;
+    flex: none;
+    width: 1420px;
+    margin-top: -70px;
+    margin-left: -20px;
+    margin-right: 10px;
+}
+
+.farRightModule{
+    grid-area: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 3;
+    width: 484px;
+    padding: 20px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    position: static;
+}
+
+
+.sign{
+    /* sign */
+    order: 1;
+    width: 325px;
+}
+.history{
+    order: 2;
+    /* right module text */
+    width: 275px;
+    font-family: Roboto;
+    flex-wrap: wrap;
+    font-size: 18px;
+    text-align: left;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+span{
+    color: rgb(187, 9, 8);
+    font-weight: bold;
+}
+.underwater{
+    order: 3;
+    /* underwater */
+    width: 325px;
+    margin-top: 30px;
+}
+
+footer{
+    height: 17px;
+    background-color: rgb(7, 7, 7);
+    font-family: Teko;
+    font-size: 12px;
+    padding: 20px;
+    color: rgb(188, 188, 188);
+    text-align:left;
+}
